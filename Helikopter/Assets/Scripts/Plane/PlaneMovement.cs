@@ -7,6 +7,9 @@ public class PlaneMovement : MonoBehaviour
 
     [SerializeField] private float motorPower = 1f;
     [SerializeField] private float liftCoefficient = 1f;
+    [SerializeField] private float pitchRotationSpeed = 1f;
+    [SerializeField] private float yawRotationSpeed = 1f;
+    [SerializeField] private float rollRotationSpeed = 1f;
 
     private Vector2 leftJoystick, rightJoystick;
     private Controls controls;
@@ -37,6 +40,17 @@ public class PlaneMovement : MonoBehaviour
 
         // Adding lift force
         rigidbody.AddForce(new Vector3(0, Lift));
+
+        // Pitch
+        rigidbody.AddRelativeTorque(new Vector3(rightJoystick.y * pitchRotationSpeed, 0));
+
+        // Yaw
+        rigidbody.AddRelativeTorque(new Vector3(0, leftJoystick.x * yawRotationSpeed));
+
+        // Roll
+        rigidbody.AddRelativeTorque(new Vector3(0, 0, -rightJoystick.x * rollRotationSpeed));
+    }
+
 
 
     private float Lift
