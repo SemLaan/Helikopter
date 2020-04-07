@@ -301,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233102688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: -0.1, z: -13.3}
+  m_LocalPosition: {x: 1.2, y: -0.1, z: -1.25}
   m_LocalScale: {x: 39.689354, y: 0.8002743, z: 32.88199}
   m_Children: []
   m_Father: {fileID: 0}
@@ -383,13 +383,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377963290}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.18257873, y: 0, z: 0, w: 0.98319125}
+  m_LocalPosition: {x: 0, y: 16.21, z: -6.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787746533}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.04, y: 0, z: 0}
 --- !u!1 &1787746529
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787746529}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3425e0d877c66044a961747a0caf80c5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -481,7 +481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787746529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9224, y: 1.029, z: -9.6}
+  m_LocalPosition: {x: 3.9224, y: 59.5, z: -9.6}
   m_LocalScale: {x: 5.127781, y: 0.251, z: 1}
   m_Children:
   - {fileID: 377963293}
@@ -496,9 +496,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787746529}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 83.53
+  m_Drag: 0.9
+  m_AngularDrag: 6.18
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -595,4 +595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859d441de5ababd4ab7288ccea1a289c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorPower: 29.28
+  motorPower: 1170.93
+  liftCoefficient: 7.86
+  pitchRotationSpeed: 30
+  yawRotationSpeed: 173.53
+  rollRotationSpeed: 575
