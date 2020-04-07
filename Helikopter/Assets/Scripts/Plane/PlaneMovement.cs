@@ -55,6 +55,6 @@ public class PlaneMovement : MonoBehaviour
 
     private float Lift
     {
-        get => (liftCoefficient * Mathf.Pow(rigidbody.velocity.magnitude, 2f)) / 2f; // TODO: wing area
+        get => liftCoefficient * rigidbody.velocity.magnitude;//Mathf.Pow(rigidbody.velocity.magnitude, 2f); // TODO: wing area
     }
 }
